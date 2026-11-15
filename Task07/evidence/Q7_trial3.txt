@@ -1,0 +1,10 @@
+size,structure,front_add_remove_ns
+1000,ArrayList,2792100
+1000,ArrayDeque,672300
+10000,ArrayList,6736800
+10000,ArrayDeque,486700
+50000,ArrayList,27515400
+50000,ArrayDeque,486800
+Diagnosis: ArrayList shifts approximately n elements on each front insertion/removal.
+Redesign: ArrayDeque uses a circular array and changes head/tail indices, giving amortized O(1) operations at either end.
+Trade-off: ArrayDeque has no indexed get; retain ArrayList for random-access playlist browsing.
