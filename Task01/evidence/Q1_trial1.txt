@@ -1,0 +1,7 @@
+fields,tickets,plus_ns_per_ticket,builder_ns_per_ticket,buffer_ns_per_ticket,heap_before_bytes,heap_after_bytes
+6,1,44100,30700,16300,1133304,1594696
+50,10000,4219,644,816,745136,76244672
+200,2000,36541,3560,3258,754936,31166296
+Heap readings are approximate snapshots and are affected by JVM garbage collection; repeat trials and do not treat them as exact allocation counts.
+Estimated intermediates: repeated + creates successive String results; builder/buffer reuse a mutable buffer and create a final String.
+Recommendation: StringBuilder for a thread-confined ticket; use a thread-safe logging facility or queued logging for shared logs.
