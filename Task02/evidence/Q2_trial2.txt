@@ -1,0 +1,8 @@
+size,structure,append_ns,front_insert_remove_ns,middle_insert_remove_ns,get_middle_ns,iterate_ns
+1000,ArrayList,142700,561200,125200,2621900,211800
+1000,LinkedList,201300,339300,480800,25066700,606600
+10000,ArrayList,132400,721800,151600,1191400,1770300
+10000,LinkedList,138900,105900,2071700,221136900,1448500
+30000,ArrayList,134500,16978600,10409200,15661200,2860000
+30000,LinkedList,78100,83400,6766900,664496500,3607800
+Up Next recommendation: ArrayDeque for frequent operations at both ends; it does not provide indexed access.
