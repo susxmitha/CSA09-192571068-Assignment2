@@ -1,0 +1,13 @@
+medicines,map,100000_lookups_ns,iteration_ns,code_order
+100,HashMap,7219300,70600,NO
+100,TreeMap,5963500,123000,YES
+100,LinkedHashMap,3427800,117200,NO (insertion order)
+1000,HashMap,8143300,93900,NO
+1000,TreeMap,6996800,381300,YES
+1000,LinkedHashMap,2285100,292100,NO (insertion order)
+10000,HashMap,1424600,908600,NO
+10000,TreeMap,13583000,2757400,YES
+10000,LinkedHashMap,4236600,1553900,NO (insertion order)
+HashMap: average O(1) put/get, iteration O(n), no guaranteed order.
+TreeMap: O(log n) put/get, sorted-key iteration O(n). LinkedHashMap: average O(1), insertion-order iteration O(n).
+Hashtable is legacy synchronized API; prefer HashMap plus explicit concurrency control when required.
