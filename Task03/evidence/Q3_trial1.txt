@@ -1,0 +1,6 @@
+Test 1 - distinct scans, set size: 2
+Test 2 - broken equals/hashCode, set size: 3
+Test 3 - corrected HashSet size: 2
+TreeSet size: 2
+HashMap size: 2
+The broken HashSet size is not guaranteed; hash codes are identity-based in this deliberately incorrect class.
